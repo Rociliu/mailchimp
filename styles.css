@@ -25,6 +25,7 @@ h1{
 .header{
     font-family: Arial, Helvetica, sans-serif;
     display:inline;
+    margin:auto;
 }
 .header a{
     display:inline;
@@ -72,7 +73,7 @@ ul{
     display:inline;
 }
 .checkbox label{
-    
+    margin:auto;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
