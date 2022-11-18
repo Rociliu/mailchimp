@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,67 @@
     <link rel="stylesheet" href="styles.css">
     <title>Mailchimp</title>
 </head>
+
 <body>
-<span class="logo">
-    <img src="./images/mailchimp.png" alt="logo">
-</span>
+    <span class="logo">
+        <img src="./images/mailchimp.png" alt="logo">
+    </span>
 
-<div class="principal">
-    <h1>Welcome to Mailchimp</h1>
+    <div class="principal">
+        <h1>Welcome to Mailchimp</h1>
 
-    <div class="header"><p>Find your people. Engage your customers. Build yor brand. Do it all with Mailchimp's Marketing Platform. Already have an account?</p>
-    <a href="#">Log in</a>
+        <div class="header">
+            <p>Find your people. Engage your customers. Build yor brand. Do it all with Mailchimp's Marketing Platform.
+                Already have an account?</p>
+            <a href="#">Log in</a>
+        </div>
+        </header>
+
+        <main>
+            <form>
+                <div class="input_email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input_user">
+                    <label for="user">Username</label>
+                    <input type="text" id="user" minlength="3" max="12" required>
+                </div>
+                <div class="input_password">
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                </div>
+                <div class="request">
+                    <ul class="list1">
+                        <li>One lowercase character</li>
+                        <li>One uppercase character</li>
+                        <li>One number</li>
+                    </ul>
+                    <ul class="list2">
+                        <li>One special character</li>
+                        <li>8 characters minimun</li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button>Sign Up</button>
+                    <div class="checkbox">
+                        <input type="checkbox" id="preference">
+                        <label for="preference">
+                            <span>
+                            <p>I don't want to receive emails about new Mailchimp products, best practices, or special
+                                offers.</p>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a
+                    href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></p>
+        </footer>
     </div>
-    </header>
-
-    <main>
-    <form>
-        <div class="input_email">
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
-        </div>
-        <div class="input_user">
-            <label for="user">Username</label>
-            <input type="text" id="user" minlength="3" max="12" required>
-        </div>
-        <div class="input_password">
-            <label for="pwd">Password</label>
-            <input type="password" id="pwd" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
-        </div>
-        <div class="request">
-        <ul class="list1">
-            <li>One lowercase character</li>
-            <li>One uppercase character</li>
-            <li>One number</li>
-        </ul>
-        <ul class="list2">
-            <li>One special character</li>
-            <li>8 characters minimun</li>
-        </ul>
-        </div>
-        <button>Sign Up</button>
-        <div class="checkbox">
-            <input type="checkbox" id="preference">
-            <label for="preference">
-                <span><p>I don't want to receive emails about new Mailchimp products, best practices, or special offers.</p></span>
-            </label>
-        </div>
-    </form>
-    </main>
-
-    <footer>
-    <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></p>
-    </footer>
-</div>
 </body>
+
 </html>
