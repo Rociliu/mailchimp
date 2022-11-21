@@ -35,7 +35,17 @@ h1{
     color:rgb(50, 178, 221);
 }
 
-
+input{
+    border-color: lightgray;
+    border-style:solid;
+    border-radius: 3px;
+    position: relative;
+    max-width: 500px;
+    margin-top: 6px;
+    display: block;
+    height: 30px;
+    width: 400px;
+}
 form div:not([class="checkbox"]){
     margin-top:20px;
     margin-bottom:20px;
@@ -48,61 +58,76 @@ label{
 div ul{
     display:inline-grid;
 }
-ul{
-    list-style-type:disc
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022"; 
+    color: rgb(50, 178, 221);
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
     
    }
 
    li{
     font-family: Arial, Helvetica, sans-serif;
    }
-   button{  
-    
-    background-color: white;  
-    padding: 10px 30px;
-    margin-top: 20px;
-    margin-right: 20px; 
+   .buttons{  
+    display: flex;
+    justify-content:space-evenly;
+   
+    width: 500px;
+
+   }
+   .buttons button{
+    width: 150px;
+    height: 40px;
     border-color: lightgray;
     border-style:solid;
     border-radius: 3px;
-    color: lightgray;
-    font-weight: bold;
+    color:lightgray;
+    background-color: white;
+   
    }
 
 .checkbox{
+   
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: stretch;
+    text-align: left;
+    width: 280px;
+    
+   
 }
-.checkbox label{
+.checkbox > label{
+ 
     margin:auto;
-    font-size: 16px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
+    
+    
  
     
 }
-input:not([type="checkbox"]){
-    border-color: lightgray;
-    border-style:solid;
-    border-radius: 3px;
-    position: relative;
-    max-width: 500px;
-    margin-top: 6px;
-    display: block;
-    height: 30px;
-    width: 400px;
-}
+
+    
+
 .checkbox  p{
-    display:inline;
+    
+    text-align: left;
+    padding-left: 3px;
 }
 .checkbox input{
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width:50px;
+    border-color:lightgray;
+    border-style:solid;
+    border-radius: 3px;
 }
+
 
 footer{
     margin-top: 50px;;
